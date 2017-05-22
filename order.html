@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- ensures the document is using the correct char set --> 
+  <meta charset="utf-8">
+  <meta name="Solent Pizza" content="Ordering from Solent Pizza">  
+    
+ <link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="images/favicon.png">
+
+  <title> Solent Pizza| Order </title>
+    
+    <h1>Solent Pizza</h1>
+    
+    <script language="Javascript">
+
+function CheckFunction() {
+//validate is user has selected a topping//
+var x = document.getElementById("Topping").checked;
+ 
+ if (x==false) {
+     alert("please select a Topping")
+ }
+
+}
+   </script>
+ 
+    
+</head>
+
+<body> 
+        <!-- Start of wrapper-->
+<div id="wrapper">
+        <!--Start of Naviagtion to link html pages-->
+        <div id="nav"> 
+    <nav id="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+    </ul>
+    </nav>
+            </div>
+    <!--End of nav--> 
+    <!--Top image displayed in HTML page-->
+    <div id="image1">
+        
+        <img  src="images/pizza.jpg" alt="Image of Pizza">
+    </div>
+    <!--End of image-->
+    
+                <!--Begining of order form-->
+                <div>
+
+<form name="OrderForm" method="post" style="font-size:20px;">
+    <p style="font-size:24px"> Select a topping:</p>
+    <input type="radio" id="Topping"> Cheese<br>
+                                      
+<p style="font-size:24px">Select base size:</p>
+    
+ <span class="price">£5.00</span> <br><input type="radio" id="base" value="small"> small<br><br> 
+    
+ <span class="price">£7.50</span> <br> <input type="radio"  id="base" value="medium"> medium<br><br>
+
+ <span class="price">£10.00</span> <br> <input type="radio"  id="base" value="large"> large<br><br>
+    
+<span class="price">£12.50</span> <br> <input type="radio" id="base" value="X-large"> X-large<br><br>    
+        <p style="font-size:24px"> Select an Extra:</p>
+    <span class="price">£2.50</span> <br><input type="radio" id="Extra"> Chips<br>
+ Address Line 1:<br><input type="text" name="Address" ><br><br>
+PostCode:<br><input type="text" name="Postcode"><br><br>
+    
+    <br>
+  <input type="submit" onclick="CheckFunction()" value="Place Order">
+    <input type="reset" value="Reset">
+    
+</form> 
+
+    
+                </div>
+                <!--End of order form-->
+        <!-- second image displayed in HTML page-->
+        <div>
+        <img  src="images/pizza3.jpg" alt="Image of Pizza">
+        
+    </div>
+    <!--end of image-->
+    
+    </div>
+    <!--end of wrapper-->
+<!--footer-->
+    <footer id="footer">   
+      
+    </footer>
+
+</body>
+    
+
+    </div>

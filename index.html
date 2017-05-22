@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- ensures the document is using the correct char set --> 
+  <meta charset="utf-8">
+  <meta name="Solent Pizza" content="About Solent Pizza">  
+    
+ <link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="images/favicon.png">
+  <title> Solent Pizza| Home </title>
+    <script>
+var image;
+//main function runs on page load to create rolloover image
+function main(){
+    //rollover image from element ID in html, it shows audio event when mouse goes over the image
+    image = document.getElementById("PizzaImage");
+    //add event listeners to the image 
+    image.addEventListener("mouseover", mouseOver); 
+    image.addEventListener("mouseout", mouseOut); 
+}
+
+function mouseOver() {
+    //update image src attribute - first image shown on rollover image
+    image.src = "images/pizza.jpg";   
+}
+
+
+function mouseOut() {
+   //update image src attribute - image shown when mouse rolls over it
+  image.src = "images/pizza4.jpg";
+}
+    </script>
+    
+    <h1>Solent Pizza</h1> 
+</head>
+<div id="wrapper">
+    <!--This shows the function being called apon from the head sections-->
+
+<body onload="main()"> 
+    <!-- The navigation system that links webpages together-->
+        <div id="nav"> 
+    <nav id="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+    </ul>
+    </nav>
+            <!--end of nav section-->
+            </div>
+<!-- this is a div that is the section of the webpage, it gives information about the website-->
+                <div id="about">
+                    <h2>About us</h2>
+                    <h3>PIZZA PIZZA PIZZA</h3>
+                    <p>Fresh Pizza 4 U</p>
+                    <p>Solent Pizza's are here to give you the best pizza expereince of all time. With our super speedy delivery. we sell the best hot and tasty pizza.</p>
+<!-- end of "About"-->
+  </div>
+<!-- rolloverimages that is called upon from the head section-->
+    <div>
+        <img id ="PizzaImage" src="images/pizza.jpg">
+    <!-- end of rollover image-->
+    </div>
+
+<!-- footer that displays the time of day exactly using javascript--> 
+    <footer id="footer">
+        <p id="Time"></p>
+
+<script language = "Javascript">
+document.getElementById("Time").innerHTML = Date();
+</script>       
+      
+    </footer>
+
+</body>
+    
+<!-- End of wrapper-->
+    </div>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- ensures the document is using the correct char set --> 
+  <meta charset="utf-8">
+  <meta name="Solent Pizza" content="Contact Solent Pizza">  
+    
+ <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="images/favicon.png">  
+  <title> Solent Pizza| Contact </title>
+    
+    <h1>Solent Pizza</h1>
+    <script> 
+        //Validates that first name text box had been filled//
+        function validateForm() 
+    var x = document.forms["myForm"]["firstname"].value;
+    if (x == "") {
+        alert("FirstName must be filled out");
+        return false;
+    }
+        //Validates that last name text box had been filled//
+        var y=document.forms["myForm"]["lastname"].value;
+if (y=="") {
+  alert(" LastName must be filled out");
+  return false;
+}
+        //Validates that the message text box had been filled//
+            var z=document.forms["myForm"]["Message"].value;
+if (z=="") {
+  alert("Message must be filled out");
+  return false;
+    }
+        //Validates that email text box had been filled//
+            var e=document.forms["myForm"]["Email"].value;
+if (e=="") {
+  alert("Must be a Valid Email");
+  return false;
+}
+    </script>
+ 
+    
+</head>
+    
+
+<body> 
+    <!-- Begining of wrapper-->
+    <div id="wrapper">
+    <!--Navigation to link webpages-->
+        <div id="nav"> 
+    <nav id="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+    </ul>
+    </nav>
+            </div>
+    <!--End of navigation--> 
+        
+    <!--Top image displayed in HTML page--> 
+        <div id="image1">
+        
+        <img  src="images/pizza.jpg" alt="Image of Pizza">
+    </div>
+        <!-- End of div for image-->
+
+<!--div for form that allows user to input contact information--> 
+    <div>
+<form name="myForm" onsubmit="return validateForm()" method="post">
+    First name:<br> <input type="text" name="firstname" size="50px"> <br><br>
+    Last name:<br><input type="text" name="lastname" size="50px"><br><br>
+    Email:<br><input type="text" name="Email" size="50px"><br><br>
+    Phone:<br><input type="text" name="Phone" value="(Optional)" size="50px"><br><br>
+    Message:<br><input type="text" name="Message" size="50px"><br><br>
+    
+      <input type="submit" value="Submit">
+    <!--submit button-->
+    <input type="reset" value="clear">
+    <!--clear button-->
+        </form>
+    </div>
+        <!-- End of form-->
+        <!-- Second image-->
+        <div>
+        <img  src="images/pizza3.jpg" alt="Image of Pizza">
+        
+    </div>
+        <!--End of second image-->
+    </div>
+    <!--End of wrapper-->
+
+</body>
+<!--Footer-->
+    
+    <footer id="footer">
+    </footer>
+
+
+    
